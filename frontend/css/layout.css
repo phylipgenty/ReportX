@@ -1,0 +1,181 @@
+#app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-w);
+  background: var(--navy-900);
+  color: var(--white);
+  padding: var(--sp-5) var(--sp-4);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebar .brand {
+  font-family: var(--font-serif);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+
+.sidebar .brand small {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  color: var(--gold-400);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.sidebar .nav {
+  margin-top: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 10px var(--sp-3);
+  border-radius: var(--radius-sm);
+  color: #CBD3DE;
+  font-size: var(--fs-md);
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar .nav-item:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sidebar .nav-item.active {
+  background: var(--gold-500);
+  color: var(--navy-900);
+}
+
+.sidebar .nav-item .icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.sidebar .spacer { flex: 1; }
+
+.sidebar .last-import {
+  padding: var(--sp-3);
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  color: #A9B3C0;
+}
+
+.sidebar .last-import strong {
+  display: block;
+  color: var(--white);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.topbar {
+  height: var(--topbar-h);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding: 0 var(--sp-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.topbar .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: var(--fs-xs);
+  color: var(--ink-500);
+  font-weight: 600;
+}
+
+.topbar h1 { font-size: var(--fs-2xl); }
+
+.topbar .actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.view {
+  padding: var(--sp-6);
+  flex: 1;
+  max-width: var(--content-max);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Narrow-screen layout (drawer navigation etc.) lives in responsive.css. */
+
+.sidebar .nav-item .icon-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Signed-in user */
+.sidebar .user-chip {
+  margin-top: var(--sp-3);
+  padding: var(--sp-3);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: var(--fs-xs);
+  color: #A9B3C0;
+}
+.sidebar .user-name { color: var(--white); font-weight: 600; font-size: var(--fs-sm); }
+.sidebar .user-actions { display: flex; gap: var(--sp-3); margin-top: var(--sp-2); }
+.link-btn {
+  background: none; border: none; padding: 0; font: inherit; cursor: pointer;
+  color: var(--gold-400); text-decoration: underline; text-underline-offset: 2px;
+}
+.link-btn:hover { color: var(--white); }
+
+/* Sign-in screens */
+.auth-screen {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  padding: var(--sp-5) var(--sp-4); background: var(--navy-900);
+}
+.auth-card {
+  width: 100%; max-width: 420px; background: var(--white);
+  border-radius: var(--radius-lg); padding: var(--sp-6); box-shadow: var(--shadow-lg);
+}
+.auth-card h1 { font-family: var(--font-serif); color: var(--navy-900); margin: var(--sp-3) 0 var(--sp-2); }
+.auth-brand { font-family: var(--font-serif); font-weight: 700; font-size: var(--fs-xl); color: var(--navy-900); }
+.auth-brand small { display: block; font-family: var(--font-sans); font-size: var(--fs-xs); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-600); }
+.auth-error { color: var(--danger); font-size: var(--fs-sm); min-height: 1.4em; margin: var(--sp-2) 0; }
+.auth-submit { width: 100%; justify-content: center; }
+.auth-foot { margin-top: var(--sp-4); text-align: center; }

@@ -1,0 +1,6 @@
+[
+  { "id": "ent_fmdqx", "code": "FMDQX", "name": "FMDQ Exchange" },
+  { "id": "ent_fmdqc", "code": "FMDQC", "name": "FMDQ Clear" },
+  { "id": "ent_fmdqg", "code": "FMDQG", "name": "FMDQ Group" },
+  { "id": "ent_fmdqp", "code": "FMDQP", "name": "FMDQ Depository" }
+]

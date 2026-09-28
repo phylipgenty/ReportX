@@ -1,0 +1,6 @@
+{
+  "junior_rate": 40000,
+  "intermediate_rate": 75000,
+  "expert_rate": 150000,
+  "contingency_pct": 10
+}

@@ -1,0 +1,16 @@
+[
+  { "key": "project_id",        "label": "Project ID",               "aliases": ["Project ID", "ID"] },
+  { "key": "name",              "label": "Project name",             "aliases": ["Task", "Project", "Project name"] },
+  { "key": "entity",            "label": "Entity / Subsidiary",      "aliases": ["Entity", "Subsidiary"] },
+  { "key": "division",          "label": "Division",                 "aliases": ["Division"] },
+  { "key": "description",       "label": "Brief description",        "aliases": ["Brief Description", "Description"] },
+  { "key": "project_manager",   "label": "Project manager",          "aliases": ["Project Manager", "PM"] },
+  { "key": "status",            "label": "Overall status",           "aliases": ["Status", "Overall Status"] },
+  { "key": "start_date",        "label": "Start date",               "aliases": ["Start Date"] },
+  { "key": "original_baseline", "label": "Original baseline",        "aliases": ["Original Baseline"] },
+  { "key": "tsc_approved_date", "label": "TSC approved date",        "aliases": ["TSC Approved Date", "TSC Approved"] },
+  { "key": "planned_delivery",  "label": "Planned delivery",         "aliases": ["Planned Delivery"] },
+  { "key": "forecast_delivery", "label": "Forecast delivery",        "aliases": ["Forecast Delivery"] },
+  { "key": "actual_delivery",   "label": "Actual delivery",          "aliases": ["Actual Delivery"] },
+  { "key": "weight_pct",        "label": "Weight % (stored only; completion rule unconfirmed)", "aliases": ["Weight %", "Weight"] }
+]

@@ -1,0 +1,21 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local data — never commit: holds user accounts, project data and attachments
+backend/data/
+backend/uploads/
+*.db
+*.db-journal
+
+# Local configuration (copy backend/.env.example to backend/.env)
+.env
+backend/.env
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

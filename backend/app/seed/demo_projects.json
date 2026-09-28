@@ -1,0 +1,151 @@
+[
+  {
+    "id": "PRJ-00001",
+    "identity": {
+      "name": "e-Offering Platform (eSubscription)",
+      "entity_id": "ent_fmdqx",
+      "division_id": "div_bdd",
+      "project_manager": "LO",
+      "status": "Ongoing",
+      "completion_pct": 0,
+      "status_update": "Updated 2 months ago by MO"
+    },
+    "schedule": {
+      "start_date": "2024-11-30",
+      "original_baseline": "2024-11-30",
+      "tsc_approved_date": "2025-04-01",
+      "planned_delivery": "2025-04-01",
+      "forecast_delivery": "2025-12-19",
+      "actual_delivery": null,
+      "variance_days": null
+    },
+    "resources": {
+      "junior_days": 120,
+      "intermediate_days": 90,
+      "expert_days": 40,
+      "other_planned_costs": 0,
+      "actual_cost_to_date": 41500000,
+      "resource_cost": 0,
+      "contingency": 0,
+      "planned_budget": 0
+    },
+    "rag": { "schedule": "Red", "budget": "Amber", "issues": "Amber" },
+    "milestones": [
+      { "key": "BRD",          "status": "Done",    "baseline_date": "2024-09-06", "expected_date": "2024-09-06", "actual_date": "2024-09-06", "note": "", "history": [] },
+      { "key": "SSD",          "status": "Done",    "baseline_date": "2025-02-14", "expected_date": "2025-02-14", "actual_date": "2025-02-14", "note": "", "history": [] },
+      { "key": "CODE_DROP",    "status": "Done",    "baseline_date": "2025-04-14", "expected_date": "2025-04-14", "actual_date": "2025-04-14", "note": "", "history": [] },
+      { "key": "QA",           "status": "Done",    "baseline_date": "2025-09-15", "expected_date": "2025-09-15", "actual_date": "2025-09-15", "note": "", "history": [] },
+      { "key": "VAPT",         "status": "Done",    "baseline_date": "2025-11-18", "expected_date": "2025-11-18", "actual_date": "2025-11-18", "note": "", "history": [] },
+      { "key": "UAT",          "status": "Done",    "baseline_date": "2025-10-06", "expected_date": "2025-10-06", "actual_date": "2025-10-06", "note": "", "history": [] },
+      { "key": "BRAND_REVIEW", "status": "Done",    "baseline_date": "2025-10-06", "expected_date": "2025-10-06", "actual_date": "2025-10-06", "note": "", "history": [] },
+      { "key": "ASR",          "status": "Delayed", "baseline_date": "2025-12-02", "expected_date": "2025-12-16", "actual_date": null,         "note": "", "history": [] },
+      { "key": "GO_LIVE",      "status": "Delayed", "baseline_date": "2025-12-16", "expected_date": "2025-12-19", "actual_date": null,         "note": "", "history": [] }
+    ],
+    "issues": [],
+    "risks": [],
+    "planned_activities": {
+      "accomplishments": [],
+      "not_accomplished": [],
+      "next_period": []
+    },
+    "executive_summary": "",
+    "documents": [],
+    "created_at": "2024-09-01T00:00:00Z",
+    "updated_at": "2025-04-01T00:00:00Z"
+  },
+  {
+    "id": "PRJ-00002",
+    "identity": {
+      "name": "CCP System",
+      "entity_id": "ent_fmdqx",
+      "division_id": "div_crd",
+      "project_manager": "AA",
+      "status": "Ongoing",
+      "completion_pct": 0,
+      "status_update": "Delayed at QA, VAPT and UAT"
+    },
+    "schedule": {
+      "start_date": "2024-08-01",
+      "original_baseline": "2024-08-01",
+      "tsc_approved_date": "2025-03-31",
+      "planned_delivery": "2025-03-31",
+      "forecast_delivery": "2025-10-31",
+      "actual_delivery": null,
+      "variance_days": null
+    },
+    "resources": {
+      "junior_days": 160,
+      "intermediate_days": 140,
+      "expert_days": 70,
+      "other_planned_costs": 0,
+      "actual_cost_to_date": 38400000,
+      "resource_cost": 0,
+      "contingency": 0,
+      "planned_budget": 0
+    },
+    "rag": { "schedule": "Red", "budget": "Amber", "issues": "Red" },
+    "milestones": [
+      { "key": "BRD",          "status": "Done",     "baseline_date": "2024-09-06", "expected_date": "2024-09-06", "actual_date": "2024-09-06", "note": "", "history": [] },
+      { "key": "SSD",          "status": "Done",     "baseline_date": "2025-02-14", "expected_date": "2025-02-14", "actual_date": "2025-02-14", "note": "", "history": [] },
+      { "key": "CODE_DROP",    "status": "WIP",      "baseline_date": "2025-04-14", "expected_date": "2025-04-14", "actual_date": null,         "note": "", "history": [] },
+      { "key": "QA",           "status": "Delayed",  "baseline_date": "2025-09-15", "expected_date": "2025-09-15", "actual_date": null,         "note": "", "history": [] },
+      { "key": "VAPT",         "status": "Delayed",  "baseline_date": "2025-11-18", "expected_date": "2025-11-18", "actual_date": null,         "note": "", "history": [] },
+      { "key": "UAT",          "status": "Delayed",  "baseline_date": "2025-10-06", "expected_date": "2025-10-06", "actual_date": null,         "note": "", "history": [] },
+      { "key": "BRAND_REVIEW", "status": "Pending",  "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] },
+      { "key": "ASR",          "status": "Delayed",  "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] },
+      { "key": "GO_LIVE",      "status": "Delayed",  "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] }
+    ],
+    "issues": [],
+    "risks": [],
+    "planned_activities": { "accomplishments": [], "not_accomplished": [], "next_period": [] },
+    "executive_summary": "",
+    "documents": [],
+    "created_at": "2024-08-01T00:00:00Z",
+    "updated_at": "2025-04-01T00:00:00Z"
+  },
+  {
+    "id": "PRJ-00003",
+    "identity": {
+      "name": "Automation of FMDQX Revenue Lines",
+      "entity_id": "ent_fmdqx",
+      "division_id": "div_bdd",
+      "project_manager": "BB",
+      "status": "Ongoing",
+      "completion_pct": 0,
+      "status_update": ""
+    },
+    "schedule": {
+      "start_date": "2024-09-01",
+      "original_baseline": "2024-09-01",
+      "tsc_approved_date": "2025-04-01",
+      "planned_delivery": "2025-04-01",
+      "forecast_delivery": "2025-12-31",
+      "actual_delivery": null,
+      "variance_days": null
+    },
+    "resources": {
+      "junior_days": 90, "intermediate_days": 70, "expert_days": 30,
+      "other_planned_costs": 0, "actual_cost_to_date": 27900000,
+      "resource_cost": 0, "contingency": 0, "planned_budget": 0
+    },
+    "rag": { "schedule": "Amber", "budget": "Green", "issues": "Amber" },
+    "milestones": [
+      { "key": "BRD",          "status": "Done",    "baseline_date": "2024-09-06", "expected_date": "2024-09-06", "actual_date": "2024-09-06", "note": "", "history": [] },
+      { "key": "SSD",          "status": "Done",    "baseline_date": "2025-02-14", "expected_date": "2025-02-14", "actual_date": "2025-02-14", "note": "", "history": [] },
+      { "key": "CODE_DROP",    "status": "Done",    "baseline_date": "2025-04-14", "expected_date": "2025-04-14", "actual_date": "2025-04-14", "note": "", "history": [] },
+      { "key": "QA",           "status": "Done",    "baseline_date": "2025-09-15", "expected_date": "2025-09-15", "actual_date": "2025-09-15", "note": "", "history": [] },
+      { "key": "VAPT",         "status": "Delayed", "baseline_date": "2025-11-18", "expected_date": "2025-11-18", "actual_date": null,         "note": "", "history": [] },
+      { "key": "UAT",          "status": "Delayed", "baseline_date": "2025-10-06", "expected_date": "2025-10-06", "actual_date": null,         "note": "", "history": [] },
+      { "key": "BRAND_REVIEW", "status": "N/A",     "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] },
+      { "key": "ASR",          "status": "Delayed", "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] },
+      { "key": "GO_LIVE",      "status": "Delayed", "baseline_date": null,         "expected_date": null,         "actual_date": null,         "note": "", "history": [] }
+    ],
+    "issues": [],
+    "risks": [],
+    "planned_activities": { "accomplishments": [], "not_accomplished": [], "next_period": [] },
+    "executive_summary": "",
+    "documents": [],
+    "created_at": "2024-09-01T00:00:00Z",
+    "updated_at": "2025-04-01T00:00:00Z"
+  }
+]

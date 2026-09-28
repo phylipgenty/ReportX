@@ -1,0 +1,10 @@
+[
+  { "id": "div_bdd", "code": "BDD", "name": "Business Development" },
+  { "id": "div_crd", "code": "CRD", "name": "Client Relations" },
+  { "id": "div_mod", "code": "MOD", "name": "Market Operations" },
+  { "id": "div_isd", "code": "ISD", "name": "Information Systems" },
+  { "id": "div_asd", "code": "ASD", "name": "Application Services" },
+  { "id": "div_gsd", "code": "GSD", "name": "General Services" },
+  { "id": "div_mad", "code": "MAD", "name": "Market Development" },
+  { "id": "div_fsd", "code": "FSD", "name": "Financial Services" }
+]

@@ -1,0 +1,11 @@
+[
+  { "key": "BRD",          "label": "BRD",                      "short_label": "BRD",          "order": 1 },
+  { "key": "SSD",          "label": "SSD",                      "short_label": "SSD",          "order": 2 },
+  { "key": "CODE_DROP",    "label": "Code Drop",                "short_label": "Code Drop",    "order": 3 },
+  { "key": "QA",           "label": "Quality Assurance Testing","short_label": "QA",           "order": 4 },
+  { "key": "VAPT",         "label": "VAPT",                     "short_label": "VAPT",         "order": 5 },
+  { "key": "UAT",          "label": "UAT",                      "short_label": "UAT",          "order": 6 },
+  { "key": "BRAND_REVIEW", "label": "Brand Review",             "short_label": "Brand Review", "order": 7 },
+  { "key": "ASR",          "label": "Achieve System Readiness", "short_label": "ASR",          "order": 8 },
+  { "key": "GO_LIVE",      "label": "Go-Live",                  "short_label": "Go-Live",      "order": 9 }
+]

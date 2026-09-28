@@ -1,0 +1,6 @@
+[
+  { "key": "viewer",          "label": "Viewer",          "permissions": ["report.export"] },
+  { "key": "project_manager", "label": "Project Manager", "permissions": ["report.export", "project.create", "project.edit_own"] },
+  { "key": "pmo",             "label": "PMO",             "permissions": ["report.export", "project.create", "project.edit_all", "import", "costs"] },
+  { "key": "admin",           "label": "Admin",           "permissions": ["report.export", "project.create", "project.edit_all", "import", "costs", "users", "reference_data", "settings"] }
+]

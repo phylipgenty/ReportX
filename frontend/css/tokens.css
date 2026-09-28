@@ -1,0 +1,77 @@
+:root {
+  /* Palette — anchored to the mockup */
+  --navy-900: #0B2545;
+  --navy-800: #143056;
+  --navy-700: #1E3A66;
+  --navy-600: #2A4A7C;
+
+  --gold-600: #B8912A;
+  --gold-500: #C9A227;
+  --gold-400: #D4B450;
+
+  --cream-50:  #F7F5F0;
+  --cream-100: #EFEBE2;
+  --cream-200: #E5DFD2;
+
+  --ink-900: #14161A;
+  --ink-700: #3A3F45;
+  --ink-500: #6B7079;
+  --ink-300: #A8ADB4;
+
+  --line: #E2DDD2;
+  --line-strong: #C9C3B5;
+  --white: #FFFFFF;
+
+  /* RAG + status */
+  --positive:    #2E7D5B;
+  --positive-bg: #E3F1EA;
+  --warning:     #B07A1A;
+  --warning-bg:  #FBF0D9;
+  --danger:      #A63030;
+  --danger-bg:   #F8E1E1;
+  --info:        #1E5AA8;
+  --info-bg:     #E1EBF8;
+  --neutral:     #6B6B6B;
+  --neutral-bg:  #EDEDED;
+  --muted:       #8C8C8C;
+  --muted-bg:    #F1F1F1;
+
+  /* Typography */
+  --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  --fs-xs:   12px;
+  --fs-sm:   13px;
+  --fs-md:   14px;
+  --fs-lg:   16px;
+  --fs-xl:   20px;
+  --fs-2xl:  26px;
+  --fs-3xl:  34px;
+
+  --lh-tight: 1.2;
+  --lh-base:  1.5;
+
+  /* Spacing */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* Shape & elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(11,37,69,0.06);
+  --shadow-md: 0 4px 12px rgba(11,37,69,0.08);
+  --shadow-lg: 0 12px 32px rgba(11,37,69,0.12);
+
+  /* Layout */
+  --sidebar-w: 232px;
+  --topbar-h: 64px;
+  --content-max: 1440px;
+}

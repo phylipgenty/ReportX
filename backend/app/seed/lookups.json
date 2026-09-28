@@ -1,0 +1,329 @@
+{
+  "project_status": [
+    {
+      "value": "Completed",
+      "label": "Completed",
+      "tone": "positive",
+      "is_complete": true,
+      "aliases": [
+        "Complete",
+        "Done",
+        "Closed",
+        "Delivered",
+        "Live"
+      ]
+    },
+    {
+      "value": "Ongoing",
+      "label": "Ongoing",
+      "tone": "info",
+      "aliases": [
+        "In Progress",
+        "In-Progress",
+        "WIP",
+        "Active",
+        "Started"
+      ]
+    },
+    {
+      "value": "Not-Started",
+      "label": "Not-Started",
+      "tone": "neutral",
+      "is_not_started": true,
+      "is_default": true,
+      "aliases": [
+        "Not Started",
+        "Yet to start",
+        "NS",
+        "Pipeline"
+      ]
+    }
+  ],
+  "milestone_status": [
+    {
+      "value": "Done",
+      "label": "Done",
+      "tone": "positive",
+      "counts_complete": true,
+      "aliases": [
+        "Completed",
+        "Complete",
+        "Closed",
+        "Signed off",
+        "Signed-off"
+      ]
+    },
+    {
+      "value": "WIP",
+      "label": "WIP",
+      "tone": "info",
+      "aliases": [
+        "In Progress",
+        "In-Progress",
+        "Ongoing",
+        "Work in progress",
+        "Started"
+      ]
+    },
+    {
+      "value": "Delayed",
+      "label": "Delayed",
+      "tone": "danger",
+      "is_delayed": true,
+      "aliases": [
+        "Late",
+        "Overdue",
+        "Behind"
+      ]
+    },
+    {
+      "value": "Pending",
+      "label": "Pending",
+      "tone": "warning",
+      "aliases": [
+        "On Hold",
+        "Awaiting",
+        "Scheduled"
+      ]
+    },
+    {
+      "value": "Not Started",
+      "label": "Not Started",
+      "tone": "neutral",
+      "is_default": true,
+      "aliases": [
+        "Not-Started",
+        "Not started yet",
+        "NS",
+        "Yet to start"
+      ]
+    },
+    {
+      "value": "N/A",
+      "label": "N/A",
+      "tone": "muted",
+      "counts_complete": true,
+      "aliases": [
+        "NA",
+        "Not Applicable",
+        "N.A."
+      ]
+    }
+  ],
+  "rag": [
+    {
+      "value": "Green",
+      "label": "Green",
+      "tone": "positive",
+      "report_color": "#00B050"
+    },
+    {
+      "value": "Amber",
+      "label": "Amber",
+      "tone": "warning",
+      "needs_attention": true,
+      "report_color": "#FFC000"
+    },
+    {
+      "value": "Red",
+      "label": "Red",
+      "tone": "danger",
+      "needs_attention": true,
+      "report_color": "#FF0000"
+    },
+    {
+      "value": "Not-Set",
+      "label": "Not Set",
+      "tone": "neutral",
+      "is_default": true
+    }
+  ],
+  "issue_priority": [
+    {
+      "value": "Extreme",
+      "label": "Extreme",
+      "tone": "danger",
+      "code": "X",
+      "report_color": "#FF0000",
+      "description": "Issue could cause or is causing a severe disruption in process objectives and requires urgent Management attention"
+    },
+    {
+      "value": "High",
+      "label": "High",
+      "tone": "danger",
+      "code": "H",
+      "report_color": "#FFC000",
+      "description": "Issue could cause or is causing a major disruption in the ability to achieve process objectives and requires Management attention"
+    },
+    {
+      "value": "Medium",
+      "label": "Medium",
+      "tone": "warning",
+      "is_default": true,
+      "code": "M",
+      "report_color": "#FFFF00",
+      "description": "Issue could cause or is causing moderate disruption in the ability to achieve process objectives and requires moderate Management attention"
+    },
+    {
+      "value": "Low",
+      "label": "Low",
+      "tone": "neutral",
+      "code": "L",
+      "report_color": "#00B050",
+      "description": "Issue could cause or is causing minor disruption in process objectives and requires minor attention/monitoring to prevent escalation"
+    }
+  ],
+  "issue_impact_area": [
+    {
+      "value": "Milestone",
+      "label": "Milestone",
+      "tone": "neutral"
+    },
+    {
+      "value": "Schedule",
+      "label": "Schedule",
+      "tone": "neutral"
+    },
+    {
+      "value": "Scope",
+      "label": "Scope",
+      "tone": "neutral"
+    },
+    {
+      "value": "Resources",
+      "label": "Resources",
+      "tone": "neutral"
+    },
+    {
+      "value": "Space",
+      "label": "Space",
+      "tone": "neutral"
+    }
+  ],
+  "risk_status": [
+    {
+      "value": "Not triggered",
+      "label": "Not triggered",
+      "tone": "neutral",
+      "is_default": true
+    },
+    {
+      "value": "Triggered",
+      "label": "Triggered",
+      "tone": "danger"
+    },
+    {
+      "value": "Open",
+      "label": "Open",
+      "tone": "warning"
+    },
+    {
+      "value": "Mitigated",
+      "label": "Mitigated",
+      "tone": "info"
+    },
+    {
+      "value": "Closed",
+      "label": "Closed",
+      "tone": "positive"
+    }
+  ],
+  "date_placeholder": [
+    {
+      "value": "TBD",
+      "label": "TBD",
+      "tone": "neutral",
+      "aliases": [
+        "TBC",
+        "To be determined",
+        "To be confirmed",
+        "Yet to be determined"
+      ]
+    },
+    {
+      "value": "N/A",
+      "label": "N/A",
+      "tone": "muted",
+      "aliases": [
+        "NA",
+        "Not Applicable"
+      ]
+    }
+  ],
+  "probability": [
+    {
+      "value": "1",
+      "label": "Rare",
+      "tone": "neutral",
+      "range": "1 - 20%",
+      "description": "Could occur once during a Project timeline.\nProject condition that allowed a risk event to occur rarely exists"
+    },
+    {
+      "value": "2",
+      "label": "Unlikely",
+      "tone": "neutral",
+      "range": "21 - 40%",
+      "description": "Could occur twice or thrice within a Project timeline.\nProject condition that allowed risk event to occur sometimes exists"
+    },
+    {
+      "value": "3",
+      "label": "Possible",
+      "tone": "neutral",
+      "range": "41 - 60%",
+      "is_default": true,
+      "description": "Could occur at least once within a quarter.\nProject condition that allowed risk event to occur can exist"
+    },
+    {
+      "value": "4",
+      "label": "Likely",
+      "tone": "neutral",
+      "range": "61 - 80%",
+      "description": "Could occur at least once within a month.\nProject condition that allowed risk event to occur often exists"
+    },
+    {
+      "value": "5",
+      "label": "Almost Certain",
+      "tone": "neutral",
+      "range": "81 - 100%",
+      "description": "Could occur at least once within a week.\nProject condition that allowed risk event to occur exists"
+    }
+  ],
+  "impact": [
+    {
+      "value": "1",
+      "label": "Low",
+      "tone": "neutral",
+      "description": "1. Less than 6 months delay\n2. Insignificant time increase",
+      "report_color": "#92D050"
+    },
+    {
+      "value": "2",
+      "label": "Medium",
+      "tone": "neutral",
+      "description": "1. Limited delay (Up to 6 months)\n2. <5% time increase\n3. Failure to achieve key objectives or reduction in scope",
+      "report_color": "#FFFF00"
+    },
+    {
+      "value": "3",
+      "label": "High",
+      "tone": "neutral",
+      "description": "1. Significant delay (Up to 12 months)\n2. 5-10% time increase\n3. Failure to achieve some objectives or reduction in scope",
+      "is_default": true,
+      "report_color": "#FFC000"
+    },
+    {
+      "value": "4",
+      "label": "Very High",
+      "tone": "neutral",
+      "description": "1. Severe delay (Up to 18 months)\n2. 10 - 20% time increase\n3. Failure to achieve key objectives or reduction in scope",
+      "report_color": "#FF0000"
+    },
+    {
+      "value": "5",
+      "label": "Extreme",
+      "tone": "neutral",
+      "description": "1. >18 months delay or project write-off\n2. >20% time increase\n3. No achievement of key objectives",
+      "report_color": "#C00000"
+    }
+  ]
+}
