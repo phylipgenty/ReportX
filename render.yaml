@@ -1,0 +1,23 @@
+# Render blueprint for ReportX. See README §56 for running locally.
+services:
+  - type: web
+    name: reportx
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    # Public endpoint (the rest of the API requires sign-in).
+    healthCheckPath: /api/auth/status
+    envVars:
+      # pydantic-core 2.23 ships wheels up to Python 3.13; 3.14 would force a Rust build.
+      - key: PYTHON_VERSION
+        value: "3.13.5"
+      - key: REPORTX_APP_ENV
+        value: "production"
+      # Render serves over HTTPS, so the session cookie must be Secure.
+      - key: REPORTX_SESSION_COOKIE_SECURE
+        value: "true"
+      - key: REPORTX_COMPLETION_STRATEGY
+        value: "equal"
