@@ -21,3 +21,12 @@ services:
         value: "true"
       - key: REPORTX_COMPLETION_STRATEGY
         value: "equal"
+      # First Admin, created at startup whenever the database is empty (the free
+      # plan's disk is wiped on every deploy/restart). Values are entered in the
+      # Render dashboard and never stored in the repository.
+      - key: REPORTX_ADMIN_EMAIL
+        sync: false
+      - key: REPORTX_ADMIN_PASSWORD
+        sync: false
+      - key: REPORTX_ADMIN_NAME
+        value: "Administrator"

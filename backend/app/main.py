@@ -14,7 +14,7 @@ from fastapi.responses import FileResponse
 
 from app.config import settings
 from app.services.store import store
-from app.services.auth import current_user
+from app.services.auth import current_user, ensure_initial_admin
 from app.routers import (
     projects, milestones, costs, issues, risks, documents, reports, imports, states, portfolio, auth, admin,
 )
@@ -23,6 +23,7 @@ from app.routers import (
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     store.init()
+    ensure_initial_admin()
     yield
 
 

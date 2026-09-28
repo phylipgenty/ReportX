@@ -57,6 +57,20 @@ def temporary_password() -> str:
     return secrets.token_urlsafe(9)
 
 
+def ensure_initial_admin() -> None:
+    """Creates the first Admin from REPORTX_ADMIN_EMAIL / REPORTX_ADMIN_PASSWORD when
+    the database has no users, so a fresh public deployment never offers the open
+    first-run setup screen. Does nothing once any user exists."""
+    email, password = settings.admin_email.strip(), settings.admin_password
+    if not email or not password or store.user_count() > 0:
+        return
+    problem = password_problem(password)
+    if problem or "@" not in email:
+        raise RuntimeError(f"REPORTX_ADMIN_EMAIL / REPORTX_ADMIN_PASSWORD are invalid: {problem or 'bad email'}")
+    role = next(r["key"] for r in store.roles() if {"users", "settings", "reference_data"} <= set(r["permissions"]))
+    store.create_user(email, settings.admin_name or "Administrator", role, hash_password(password), must_change=False)
+
+
 # ---------------------------------------------------------------------------
 # Login throttling (per email, in memory)
 # ---------------------------------------------------------------------------

@@ -52,6 +52,12 @@ class Settings(BaseSettings):
     login_max_attempts: int = 5
     login_lockout_minutes: int = 15
 
+    # First Admin created at startup when the database has no users, so a fresh
+    # public deployment never shows the open first-run setup screen. Set both.
+    admin_email: str = ""
+    admin_password: str = ""
+    admin_name: str = "Administrator"
+
     # Actor recorded in history when the client does not identify the user.
     default_actor: str = "system"
 
