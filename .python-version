@@ -1,1 +1,1 @@
-3.13.5
+"3.13.5" | Out-File -Encoding ascii -NoNewline .python-version
